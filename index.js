@@ -19,7 +19,7 @@ app.use(
     origin: (origin, callback) => {
       if (
         !origin ||
-        (process.env.CORS_ALLOWLIST || '').split(',').includes(origin)
+        (process.env.CORS_ALLOWLIST || 'http://challengedevops.duckdns.org').split(',').includes(origin)
       ) {
         callback(null, true);
       } else {
