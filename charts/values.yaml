@@ -1,0 +1,15 @@
+replicaCount: 1
+image:
+  repository: challenge12.azurecr.io/challenge-server
+
+publicUrl: "challengedevops-server.duckdns.org"
+
+specs:
+  ingress:
+    publicUrl: challengedevops-server.duckdns.org
+    port: 5000
+  service:
+    name: http
+    port: 5000
+    protocol: TCP
+    type: LoadBalancer
