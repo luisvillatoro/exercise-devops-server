@@ -7,9 +7,9 @@ publicUrl: "challengedevops-server.duckdns.org"
 specs:
   ingress:
     publicUrl: challengedevops-server.duckdns.org
-    port: 80
+    port: 8080
   service:
     name: http
-    port: 80
+    port: 8080
     protocol: TCP
     type: LoadBalancer
