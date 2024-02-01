@@ -22,7 +22,7 @@ spec:
             - name: CORS_ALLOWLIST
               value: {{ .Values.env.CORS_ALLOWLIST }}
           ports:
-            - containerPort: 5000
+            - containerPort: 8080
               protocol: TCP
           resources:
             requests:
