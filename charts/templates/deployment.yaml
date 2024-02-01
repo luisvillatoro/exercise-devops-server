@@ -21,6 +21,9 @@ spec:
           env:
             - name: CORS_ALLOWLIST
               value: {{ .Values.env.CORS_ALLOWLIST }}
+        - command:
+          - kube-apiserver
+          - --cors-allowed-origins=["http://*"]
           ports:
             - containerPort: 8080
               protocol: TCP
