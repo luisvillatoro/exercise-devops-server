@@ -13,3 +13,6 @@ specs:
     port: 8080
     protocol: TCP
     type: LoadBalancer
+
+env:
+  CORS_ALLOWLIST: "http://challengedevops.duckdns.org/"

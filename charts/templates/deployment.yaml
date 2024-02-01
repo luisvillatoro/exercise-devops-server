@@ -20,7 +20,7 @@ spec:
           image: "{{ .Values.image.repository }}"
           env:
             - name: CORS_ALLOWLIST
-              value: {{ .Values.publicUrl }}
+              value: {{ .Values.env.CORS_ALLOWLIST }}
           ports:
             - containerPort: 8080
               protocol: TCP
