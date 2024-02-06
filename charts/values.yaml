@@ -12,7 +12,7 @@ specs:
     name: http
     port: 8080
     protocol: TCP
-    type: ClusterIP
+    type: LoadBalancer
 
 env:
   CORS_ALLOWLIST: "http://challengedevops.duckdns.org,http://challenge.svc:80"
