@@ -8,7 +8,7 @@ specs:
 #  ingress:
 #    publicUrl: challengedevops-server.duckdns.org
 #    port: 8080
-#  service:
+  service:
     name: http
     port: 8080
     protocol: TCP
