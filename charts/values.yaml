@@ -5,9 +5,9 @@ image:
 publicUrl: "challengedevops-server.duckdns.org"
 
 specs:
-#  ingress:
-#    publicUrl: challengedevops-server.duckdns.org
-#    port: 8080
+  ingress:
+    publicUrl: challengedevops-server.duckdns.org
+    port: 8080
   service:
     name: http
     port: 8080
